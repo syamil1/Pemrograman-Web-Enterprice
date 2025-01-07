@@ -1,2 +1,13 @@
-# Pemrograman-Web-Enterprice
- This website is a platform for sharing food and drink recipes, built using Laravel for the backend and MySQL for database management. The frontend utilizes HTML, CSS, and Bootstrap for a responsive interface. This project is part of my "Tugas Besar 2" assignment, focusing on efficient coding practices and user interaction
+How To Try This Website 
+
+- Import this data (resepkitaherd.sql)
+- Open web file, and run "php artisan serve"
+
+- I used 2 role, 1 user and 1 admin.
+
+for admin login change:
+1. authcheck in app/Http/Middleware/isAdmin and change number 1 with your id (you have to check in database) 
+2. the dropdown menu in resources/views/layouts/navbar.blade.php. find line "@if(auth()->check() && auth()->user()->id === 1" change number 1 with your id
+
+Admin Features : See and download data all user
+                 See, delete, and download all recipes
