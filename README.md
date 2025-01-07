@@ -1,5 +1,6 @@
 How To Try This Website 
 
+- Change the main to master
 - Import this data (resepkitaherd.sql)
 - Open web file, and run "php artisan serve"
 
